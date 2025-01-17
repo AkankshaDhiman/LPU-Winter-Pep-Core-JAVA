@@ -311,7 +311,7 @@ public class First_Program {
             n=n/2;
             binaryNumber = (n % 2) + binaryNumber;
         }
-        System.out.println(binaryNumber);
+        System.out.println("binary number = "+binaryNumber);
 
     }
 }
