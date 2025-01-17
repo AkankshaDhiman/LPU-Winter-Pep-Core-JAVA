@@ -6,7 +6,6 @@ public class First_Program {
     public static void main(String[] args) {
 //        System.out.println("Hello Java");
 //
-//
 ////swap two variables without using third variable
 //        int p=10;
 //        int q=20;
