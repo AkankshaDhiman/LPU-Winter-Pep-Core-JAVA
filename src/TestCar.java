@@ -1,11 +1,14 @@
 public class TestCar {
     public static void main(String[] args) {
 
-        Car dfCar = new Car();
-        dfCar.startEngine();
+        Car car1 = new Car();
+        car1.startEngine();
+        car1.setMake("Ford");
+        car1.setModel("Mustang");
+        car1.setYear(2023);
+        car1.startEngine();
 
-
-        Car myCar = new Car("Toyota", "Corolla", 2022);
-        myCar.startEngine();
+        Car car2 = new Car("Toyota", "Corolla", 2022);
+        car2.startEngine();
     }
 }
