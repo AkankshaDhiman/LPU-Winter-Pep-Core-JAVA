@@ -8,6 +8,7 @@ public class Day5_Java {
 //        for(int i=0;i<n;i++){
 //            a[i]=in.nextInt();
 //        }
+
 //        for(int i=0;i<n;i++){
 //            System.out.println("Element at index "+i+" is "+a[i]);
 //        }
