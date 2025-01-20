@@ -5,5 +5,6 @@ public class VideoPlayer implements Playable {
     }
     public void stop() {
         System.out.println("Video stopped");
+
     }
 }
