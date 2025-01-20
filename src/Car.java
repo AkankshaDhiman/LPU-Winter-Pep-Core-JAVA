@@ -11,8 +11,8 @@ public class Car {
     private int year;
 
     public Car() {
-        this.make = "Random";
-        this.model = "Any";
+        this.make = "car0";
+        this.model = "model0";
         this.year = 2025;
     }
 
@@ -48,5 +48,4 @@ public class Car {
         System.out.println( year + " " + make + " " + model + " starts");
     }
 }
-
 

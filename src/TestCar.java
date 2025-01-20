@@ -3,12 +3,12 @@ public class TestCar {
 
         Car car1 = new Car();
         car1.startEngine();
-        car1.setMake("Ford");
-        car1.setModel("Mustang");
+        car1.setMake("car1");
+        car1.setModel("Model1");
         car1.setYear(2023);
         car1.startEngine();
 
-        Car car2 = new Car("Toyota", "Corolla", 2022);
+        Car car2 = new Car("car2", "model2", 2022);
         car2.startEngine();
     }
 }

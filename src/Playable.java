@@ -1,2 +1,6 @@
-package PACKAGE_NAME;public interface Playable {
+public interface Playable {
+    void play();
+    default void stop() {
+        System.out.println("Stop playing");
+    }
 }
