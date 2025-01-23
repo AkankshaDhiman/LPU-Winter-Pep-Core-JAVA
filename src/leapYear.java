@@ -116,6 +116,7 @@ public class leapYear {
                 }
             }
             System.out.println();
+            //
         }
 
             for (int i = 0; i < n; i++) {
