@@ -39,37 +39,6 @@ public class Jan_24 {
 //            }
 //        }
 
-        //
-        int[][] ar= new int[size][size];
-        for(int i=0;i<size;i++){
-            for(int j=0;j<size;j++){
-                ar[i][j]=in.nextInt();
-            }
-        }
-        int top=0,left=0,right=size-1,bottom=size-1;
-        for(int i=0;i<size;i++){
-            System.out.print(ar[top][i]+" ");
-        }
-        top++;
-        for(int i=1;i<size;i++){
-            System.out.print(ar[i][right]+" ");
-        }
-        right--;
-        for(int i=right;i>=1;i--){
-            System.out.print(ar[bottom][i]+" ");
-        }
-        bottom--;
-        for(int i=bottom;i>=1;i--){
-            System.out.print(ar[i][left]+" ");
-        }
-        left++;
-        for(int i=1;i<size;i++){
-            System.out.print(ar[top][i]+" ");
-        }
-        top++;
-        for(int i=1;i<size;i++){
-            System.out.print(ar[i][right]+" ");
-        }
-        right--;
+
     }
 }
