@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 
 public class Collections {
     public static void main(String[] args) {
@@ -49,13 +50,20 @@ public class Collections {
 //        set.add(3);
 //        System.out.println(set);
 
-        HashSet<String> set= new HashSet<>();
-        set.add("Dog");
-        set.add("Cat");
-        set.add("Apple");
-        set.add("Banana");
-        System.out.println("comntains Cat ? "+set.contains("Cat"));
-        System.out.println(set);
+//        HashSet<String> set= new HashSet<>();
+//        set.add("Dog");
+//        set.add("Cat");
+//        set.add("Apple");
+//        set.add("Banana");
+//        System.out.println("contains Cat ? "+set.contains("Cat"));
+//        System.out.println(set);
 
+        LinkedHashSet<String> set1= new LinkedHashSet<>();
+        set1.add("Alice");
+        set1.add("Bob");
+        set1.add("Charles");
+        set1.add("Alice");
+        System.out.println(set1);
+        System.out.println("contains Bob ? "+set1.contains("Bob"));
     }
 }
