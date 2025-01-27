@@ -1,8 +1,6 @@
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.LinkedHashSet;
+import java.util.*;
 
-public class Collections {
+public class Collectionsques {
     public static void main(String[] args) {
 //        ArrayList<Integer> list= new ArrayList<Integer>();
 //        //add elements
@@ -58,12 +56,48 @@ public class Collections {
 //        System.out.println("contains Cat ? "+set.contains("Cat"));
 //        System.out.println(set);
 
-        LinkedHashSet<String> set1= new LinkedHashSet<>();
-        set1.add("Alice");
-        set1.add("Bob");
-        set1.add("Charles");
-        set1.add("Alice");
-        System.out.println(set1);
-        System.out.println("contains Bob ? "+set1.contains("Bob"));
+//        LinkedHashSet<String> set1= new LinkedHashSet<>();
+//        set1.add("Alice");
+//        set1.add("Bob");
+//        set1.add("Charles");
+//        set1.add("Alice");
+//        System.out.println(set1);
+//        System.out.println("contains Bob ? "+set1.contains("Bob"));
+//        List<String> list1 = new ArrayList<>(set1);
+//        System.out.println(list1.get(1));
+//    Collections.sort(list1,Collections.reverseOrder());
+//        System.out.println(list1);
+//
+//        Scanner in= new Scanner(System.in);
+//        String str=in.nextLine();
+//        String[] words = str.split(" ");
+//        LinkedHashSet<String> set2= new LinkedHashSet<>();
+//        for(String s: words){
+//            set2.add(s);
+//
+//        }
+//        System.out.println(String.join(" ",set2));
+
+
+        //
+        List<Integer> list1 = Arrays.asList(1, 7, 3, 2, 5);
+        List<Integer> list2 = Arrays.asList(5, 3, 6,4, 7);
+
+        LinkedHashSet<Integer> set1 = new LinkedHashSet<>(list1);
+        LinkedHashSet<Integer> set2 = new LinkedHashSet<>(list2);
+        LinkedHashSet<Integer> intersection = new LinkedHashSet<>();
+        for (Integer num : set1) {
+            if (set2.contains(num)) {
+                intersection.add(num);
+            }
+        }
+        System.out.println("intersection "+ intersection);
+
+
+        //
+        List<String> list3 = Arrays.asList("Akshi","Swati","Swati","Harshit","Isha","Akshi","Harshit");
+        LinkedHashSet<String> set3 = new LinkedHashSet<>(list3);
+        System.out.println(set3);
+
     }
 }
