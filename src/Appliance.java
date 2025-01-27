@@ -1,42 +1,41 @@
-
-
-public interface Playable {
+public interface Appliance {
     void turnOn();
     default void turnOff() {
-        System.out.println("Stop playing");
+        System.out.println("turned off");
 
     }
 }
-class VideoPlayer implements Playable {
+class Light implements Appliance {
     @Override
-    public void play() {
-        System.out.println("Play video");
+    public void turnOn() {
+        System.out.println("light turned On");
     }
-    public void stop() {
-        System.out.println("Video stopped");
+    public void turnOff() {
+        System.out.println("light turned off");
 
     }
 }
-class AudioPlayer implements Playable {
+class Fan implements Appliance {
     @Override
-    public void play() {
-        System.out.println("Play audio");
+    public void turnOn() {
+        System.out.println("Fan turned On");
+    }
+
+    public void turnOff() {
+        System.out.println("Fan turned off");
+
     }
 }
 
-// Create an interface Playable with method play().
-//○ Implement it in classes VideoPlayer and AudioPlayer.
-//○ Demonstrate usage by calling play() on objects of these classes.
 
-//Add a default method in Playable called stop() that prints a generic stopping message.
-//○ Override it in VideoPlayer to show a different message.
 class Interface {
     public static void main(String[] args) {
-        Playable videoPlayer = new VideoPlayer();
-        Playable audioPlayer = new AudioPlayer();
-        videoPlayer.play();
-        audioPlayer.play();
-        videoPlayer.stop();
+        Appliance fan = new Fan();
+        Appliance light = new Light();
+        fan.turnOn();
+        light.turnOn();
+        fan.turnOff();
+        light.turnOff();
         //
     }
 }

@@ -20,7 +20,7 @@ class Rectangle extends Shape {
         System.out.println(" Rectangle ");
     }
 }
-public class Main {
+public class Shapedraw {
     public static void main(String[] args) {
         Shape circle = new circle();
         Shape rectangle = new Rectangle();
