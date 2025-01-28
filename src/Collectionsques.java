@@ -99,5 +99,41 @@ public class Collectionsques {
         LinkedHashSet<String> set3 = new LinkedHashSet<>(list3);
         System.out.println(set3);
 
+
+        //treeset
+        TreeSet<Integer> t1=new TreeSet<>();
+        t1.add(50);
+        t1.add(20);
+        t1.add(40);
+        System.out.println(t1);
+
+        //
+        TreeSet<String> t2=new TreeSet<>();
+        t2.add("Zebra");
+        t2.add("Apple");
+        t2.add("Mango");
+        System.out.println(t2.first());
+        System.out.println(t2.last());
+
+        //
+        TreeSet<Integer> t3=new TreeSet<>();
+        t3.add(5);
+        t3.add(10);
+        t3.add(15);
+        t3.removeFirst();
+        System.out.println(t3);
+
+
+        //
+        LinkedHashMap<String,String> lh=new LinkedHashMap<>();
+        lh.put("Sakshi","Sak123");
+        lh.put("Akanksha","Akshi20");
+        lh.put("Samar","Sam456");
+        System.out.println(lh);
+        if (lh.containsKey("Akanksha")) {
+            lh.put("Akanksha", "Akshi20_1");
+            System.out.println("Password updated successfully.");
+        }
+        System.out.println(lh);
     }
 }
