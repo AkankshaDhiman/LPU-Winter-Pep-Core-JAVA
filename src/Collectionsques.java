@@ -135,5 +135,32 @@ public class Collectionsques {
             System.out.println("Password updated successfully.");
         }
         System.out.println(lh);
-    }
+
+        //
+        TreeMap<String, Integer> wordsMap = new TreeMap<>();
+        wordsMap.put("apple", "apple".length());
+        wordsMap.put("banana", "banana".length());
+        wordsMap.put("cherry", "cherry".length());
+        wordsMap.put("date", "date".length());
+        wordsMap.put("elderberry", "elderberry".length());
+        System.out.println("words and their lengths: " + wordsMap);
+
+
+
+        //
+        TreeMap<Integer, String> empMap = new TreeMap<>();
+        empMap.put(101, "Alice");
+        empMap.put(102, "Bob");
+        empMap.put(103, "Charlie");
+        empMap.put(104, "David");
+
+        Integer firstKey = empMap.firstKey();
+        Integer lastKey = empMap.lastKey();
+
+        System.out.println("First Employee ID: " + firstKey);
+        System.out.println("Last Employee ID: " + lastKey);
+
+        //
+
+}
 }
