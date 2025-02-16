@@ -49,7 +49,7 @@ public class StackAL {
         stack.push(93);
         stack.push(46);
         System.out.println(stack.peek());
-
+//
 
 
     }
